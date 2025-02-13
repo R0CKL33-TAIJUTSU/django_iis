@@ -133,8 +133,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ASGI_APPLICATION = "mysite.asgi.application"
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:8020',
-    'http://127.0.0.1:8020',
+    'http://localhost:%HTTP_PLATFORM_PORT%',
+    'http://127.0.0.1:%HTTP_PLATFORM_PORT%',
     
 ]
 SESSION_COOKIE_SECURE = True
